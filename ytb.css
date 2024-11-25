@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.031rem;
+}
+
+.youtube-containers{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.top-container{
+    width: 100%;
+    height: 10vh;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.4rem;
+}
+
+.icon-container{
+    width: fit-content;
+    height: auto;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    border-radius: 1000000000000rem;
+}
+
+.icon-container:hover{
+    background-color: #ebeaea;
+}
+
+.icon-container i{
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: rgb(74, 74, 74);
+}
+
+.logo-container{
+    width: 89px;
+    height: 19.88px;
+}
+
+.logo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.center-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.form{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+input{
+    width: 27rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.9rem;
+    border: 1px solid #d4d4d4;
+    border-top-left-radius: 12rem;
+    border-bottom-left-radius: 12rem;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input:focus{
+    border: 1px solid rgb(3, 3, 232);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+}
+
+.search-icon-container{
+    width: fit-content;
+    height: auto;
+    padding: 0.4rem 0.9rem 0.4rem 0.9rem;
+    background-color: #f2f2f2;
+    border: 1px solid #d4d4d4;
+    border-left: none;
+    border-top-right-radius: 12rem;
+    border-bottom-right-radius: 12rem;
+    cursor: pointer;
+}
+
+.search-icon-container i, .mic-container i, .create-container i, .notifications-container i{
+    font-size: 0.8rem;
+    color: rgb(74, 74, 74);
+}
+
+.mic-container{
+    width: fit-content;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border-radius: 1000000000000rem;
+}
+
+.mic-container:hover{
+    background-color: #ebeaea;
+    cursor: pointer;
+}
+
+.right-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.3rem;
+}
+
+.create-container, .notifications-container, .user-container{
+    width: fit-content;
+    height: auto;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    border-radius: 100000000000rem;
+}
+
+.create-container:hover{
+    background-color: #ebeaea;
+    cursor: pointer;
+}
+
+.notifications-container:hover{
+    background-color: #ebeaea;
+    cursor: pointer;
+}
+
+.profile{
+    background-color: rgb(255, 89, 0);
+    cursor: pointer;
+}
+
+.profile h1{
+    font-size: 0.8rem;
+    color: whitesmoke;
+}
+
+.bottom-container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    /* overflow: scroll; */
+}
+
+.sidebar-container{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.first-section-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.new{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.4rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.home-section-container, .shorts-section-container, .subscription-section-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.7rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.7rem;
+    cursor: pointer;
+}
+
+.you{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.7rem;
+    cursor: pointer;
+}
+
+.home-section-container:hover{
+    background-color: #ebeaea;
+    border-radius: 0.5rem;
+}
+
+.the-first{
+    background-color: #ebeaea;
+    border-radius: 0.5rem;
+}
+
+.the-first:hover{
+    background-color: #d3d3d3;
+}
+
+.shorts-section-container:hover{
+    background-color: #ebeaea;
+    border-radius: 0.5rem;
+}
+
+.subscription-section-container:hover{
+    background-color: #ebeaea;
+    border-radius: 0.5rem;
+}
+
+.home-icon-container, .shorts-icon-container, .subscription-icon-container{
+    width: fit-content;
+    height: auto;
+}
+
+.home-icon-container i, .shorts-icon-container i, .subscription-icon-container i{
+    font-size: 0.9rem;
+    color: rgb(17, 17, 17);
+}
+
+.home-container, .shorts-container, .subscription-container{
+    width: fit-content;
+    height: auto;
+}
+
+.home-container p, .shorts-container p, .subscription-container p{
+    font-size: 0.8rem;
+    color: rgb(17, 17, 17);
+    font-weight: 500;
+}
+
+.the-second{
+    width: fit-content;
+    height: auto;
+    border-radius: 100000000rem;
+    padding: 0rem;
+    background-color: whitesmoke;
+}
+
+.the-second h1{
+    font-size: 0.7rem;
+    color:rgb(0, 42, 196);
+}
+
+.the-third{
+    width: 15px;
+    height: 15px;
+}
+
+.the-third img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1000000000rem;
+}
+
+.general-content-container{
+    width: 82%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* overflow: scroll; */
+}
+
+.upper-top-section-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.all-container{
+    width: fit-content;
+    height: auto;
+    background-color: rgb(48, 48, 48);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.all-container p{
+    font-size: 0.8rem;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.content-words-container{
+    width: fit-content;
+    height: auto;
+    background-color: #ebeaea;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.content-words-container p{
+    font-size: 0.8rem;
+    color: rgb(48, 48, 48);
+    font-weight: 500;
+}
+
+.content-words-container:hover{
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.icon-angle{
+    width: fit-content;
+    height: auto;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    border-radius: 1000000000000rem;
+}
+
+.icon-angle:hover{
+    background-color: #ebeaea;
+}
+
+.icon-angle i{
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: rgb(74, 74, 74);
+}
+
+/* the card starts here... */
+
+.lower-bottom-section-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    padding: 1rem;
+    column-gap: 0.3rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.yt-card-container{
+    width: 33%;
+    height: auto;
+    background-color: white;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    cursor: pointer;
+}
+
+.background-section-container{
+    width: 100%;
+    height: auto;
+    background-color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 0.7rem;
+}
+
+.background-image-container{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 9rem 0.5rem 0.5rem 0rem;
+    background-image: url(./images/bimbo.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.one-img-container{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 9rem 0.5rem 0.5rem 0rem;
+    background-image: url(./images/film.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.two-img-container{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 9rem 0.5rem 0.5rem 0rem;
+    background-image: url(./images/war.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.three-img-container{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 9rem 0.5rem 0.5rem 0rem;
+    background-image: url(./images/soccer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.four-img-container{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 9rem 0.5rem 0.5rem 0rem;
+    background-image: url(./images/love.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.five-img-container{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 9rem 0.5rem 0.5rem 0rem;
+    background-image: url(./images/sunKiss.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.six-img-container{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 9rem 0.5rem 0.5rem 0rem;
+    background-image: url(./images/boxing.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.seven-img-container{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 9rem 0.5rem 0.5rem 0rem;
+    background-image: url(./images/natgeo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.eight-img-container{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 9rem 0.5rem 0.5rem 0rem;
+    background-image: url(./images/lion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.timeline-container{
+    width: fit-content;
+    height: auto;
+    background-color: rgba(16, 16, 16, 0.7);
+    padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.timeline-container p{
+    font-size: 0.6rem;
+    color: white;
+    font-weight: 500;
+}
+
+.info-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    column-gap: 0.7rem;
+}
+
+.avatar-container{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100000000000rem;
+}
+
+.many-words-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.2rem;
+}
+
+.fame-fury-container{
+    width: 100%;
+    height: auto;
+}
+
+.fame-fury-container h1{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(24, 24, 24);
+    line-height: 1.2rem;
+}
+
+.bimbo-and-tv-days-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.1rem;
+}
+
+.tv-container{
+    width: fit-content;
+    height: auto;
+}
+
+.tv-container p, .views-container p, .days-container p{
+    font-size: 0.79rem;
+    font-weight: 500;
+    color:rgb(97, 97, 97);
+}
+
+.views-days-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.3rem;
+}
+
+.views-container, .days-container{
+    width: fit-content;
+    height: auto;
+}
+
+.dot-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot-container i{
+    font-size: 0.22rem;
+    color: rgb(97, 97, 97);
+}
+
+.icon-containerss{
+    width: fit-content;
+    height: auto;
+    padding: 0 0.3rem 0 0;
+}
+
+.icon-containerss i{
+    font-size: 1rem;
+    color:rgb(24, 24, 24);
+}
